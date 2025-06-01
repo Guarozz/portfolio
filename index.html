@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Guarino - Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --accent-color: #4db6ac;
+      --card-bg: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--card-bg);
+      padding: 1rem 2rem;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+    }
+
+    .intro img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .intro-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .intro-text h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .intro-text p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .bio {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="intro">
+      <img src="https://via.placeholder.com/60" alt="Marco Guarino">
+      <div class="intro-text">
+        <h1>Marco Guarino</h1>
+        <p>Sviluppatore Qt / Web</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#bio">Chi sono</a></li>
+        <li><a href="#skills">Competenze</a></li>
+        <li><a href="projects.html">Progetti</a></li>
+        <li><a href="#contacts">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="bio">
+      <p class="bio">
+        Ciao sono Marco, sono uno sviluppatore appassionato di tecnologia e design.<br/>
+        Mi piace creare soluzioni eleganti e funzionali!
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Competenze</h2>
+
+      <div class="card">
+        <h3>High-Level Skills</h3>
+        <ul>
+          <li>Qt / C++</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>PHP e MySQL</li>
+          <li>Python (base)</li>
+          <li>Git / GitHub</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Low-Level Skills</h3>
+        <ul>
+          <li>SystemVerilog</li>
+          <li>VerilogC</li>
+          <li>VHDL</li>
+          <li>C</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Contatti</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:marco@example.com">marco@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/marcoguarino" target="_blank">github.com/marcoguarino</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/marcoguarino" target="_blank">linkedin.com/in/marcoguarino</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Marco Guarino. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
